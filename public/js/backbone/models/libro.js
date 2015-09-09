@@ -11,4 +11,11 @@ var Libro = Backbone.Model.extend({
     // }
 
     urlRoot:'/libros',
+
+    validate:function(atributos){
+        if(!atributos.titulo){
+            console.log('Must have a title.');
+            return 'Must have a title';
+        }
+    }
 });

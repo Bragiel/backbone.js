@@ -12,16 +12,25 @@
 		}
 	</style>
 </head>
-<body>
+<body id='app'>
 
-	<p>Bienvenidos al Curso básico de Backbone.js</p>
+	<div class="libros">
+		<h1>Libros</h1>
+	</div>
 
-	<small>Producido por @Devcodela</small>
+	<script type="text/template" id="tplMostrarLibro">
+		<%= titulo %>
+		<%= autor %>
+		<%= libro %>
+	</script>
 	<script src="js/vendor/jquery-1.11.3.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/underscore.js"></script>
 	<script src="js/vendor/backbone.js"></script>
+	<!-- App backbone.js -->
+	<script src="js/backbone/models/libro.js"></script>
+	<script src="js/backbone/collections/libros.js"></script>
+	<script src="js/backbone/views/libreria.js"></script>
 
-	<script src="js/backbone/models//libro.js"></script>
 </body>
 </html>
