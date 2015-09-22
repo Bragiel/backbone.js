@@ -18,10 +18,25 @@
 		<h1>Libros</h1>
 	</div>
 
+	<div class="detalle">
+		<h1>Detalle Libro</h1>
+	</div>
+
 	<script type="text/template" id="tplMostrarLibro">
-		<%= titulo %>
-		<%= autor %>
-		<%= libro %>
+		<h2 class='title'><%= titulo %></h2>
+		<p><%= autor %></p>
+		<small><%= categoria %></small>
+		<hr>
+	</script>
+
+	<script type="text/template" id="tplDetalleLibro">
+		<h2 class='title'><%= titulo %></h2>
+		<p><%= autor %></p>
+	</script>
+
+	<script>
+		window.stade = '';
+		window.libroID = '';
 	</script>
 	<script src="js/vendor/jquery-1.11.3.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
@@ -31,6 +46,8 @@
 	<script src="js/backbone/models/libro.js"></script>
 	<script src="js/backbone/collections/libros.js"></script>
 	<script src="js/backbone/views/libreria.js"></script>
+	<script src="js/backbone/routes/routes.js"></script>
+	<script src="js/backbone/app.js"></script>
 
 </body>
 </html>

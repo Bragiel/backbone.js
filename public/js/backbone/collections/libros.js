@@ -1,6 +1,7 @@
+var app = app || {};
 var LibrosCollection = Backbone.Collection.extend({
-    model : Libro,
+    model : app.Libro,
     url:'/libros'
 });
 
-var appLibros = new LibrosCollection();
+app.libros = new LibrosCollection();

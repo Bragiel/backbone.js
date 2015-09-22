@@ -1,4 +1,6 @@
-var Libro = Backbone.Model.extend({
+var app = app || {};
+
+app.Libro = Backbone.Model.extend({
     // initialize: function(){
     //     console.log('HElllllooooou');
     //
